@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-champagne: #C5A880;
+  --color-champagne-light: #E2CEB5;
+  --color-champagne-dark: #9D8058;
+  --color-night-blue: #080E1E;
+  --color-night-blue-surface: #0E1830;
+  --color-night-blue-card: #131F3D;
+  --color-alabaster: #F8F7F4;
+  --color-alabaster-card: #FFFFFF;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #F1F5F9;
+    background-color: #080E1E;
+  }
+  
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080E1E;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A88033;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A88088;
+}
+
+/* Leaflet luxury integration overrides */
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 10 !important;
+  background-color: #080E1E;
+}
+
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 15 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 12px !important;
+}
+
+.leaflet-popup-tip {
+  background: #080E1E !important;
+  border: 1px solid rgba(197, 168, 128, 0.4) !important;
+}
+
+.leaflet-popup-close-button {
+  color: #C5A880 !important;
+  padding: 6px !important;
+}
+
+

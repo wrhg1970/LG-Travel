@@ -1,0 +1,6 @@
+{
+  "name": "LG Travel | Ultra-Luxury Travel & VIP Access",
+  "description": "Agencia de diseño de viajes a la medida y acceso VIP a los eventos deportivos, trenes clásicos legendarios y cruceros de ultra-lujo más exclusivos del planeta. San Pedro Garza García, N.L.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
