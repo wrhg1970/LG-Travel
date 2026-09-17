@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { MonarkaLeafletMap } from './MonarkaLeafletMap';
 import { VipBadge } from './VipBadge';
+import { MethodFaq } from './MethodFaq';
 import { OFFICE_LOCATION } from '../data/travelData';
 
 interface MethodPageProps {
@@ -268,6 +269,11 @@ export const MethodPage: React.FC<MethodPageProps> = ({ onOpenInquiry }) => {
           </div>
         </div>
       </section>
+
+      {/* =========================================================================
+          4. PREGUNTAS FRECUENTES (FAQ - Booking, Privacidad y Concierge)
+         ========================================================================= */}
+      <MethodFaq onOpenInquiry={onOpenInquiry} />
     </div>
   );
 };
